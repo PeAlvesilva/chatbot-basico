@@ -1,0 +1,81 @@
+@media (max-width: 600px) {
+
+    body {
+        font-size: 140%;
+    }
+
+    .hud {
+        width: 350px;
+        text-align: center;
+    }
+
+    header {
+        padding: 0 30px;
+    }
+
+    header img {
+        width: 130px;
+        height: 130px;
+        margin: 2px auto;
+    }
+
+    img {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 107%;
+        margin: 55px auto;
+    }
+
+    h2 {
+        font-size: 106%;
+        margin: 55px auto;
+    }
+
+    h3 {
+        font-size: 104%;
+        margin: 55px auto;
+    }
+
+    #text-area {
+        width: 310px;
+    }
+
+    .text-box {
+        width: 455px;
+        max-width: 50%;
+        height: 70px;
+        margin: 30px auto;
+        overflow-wrap: break-word; /* Força a quebra de palavras longas */
+        word-wrap: break-word; /* Compatibilidade adicional */
+        white-space: pre-wrap; /* Mantém quebras de linha e força novas */
+    }
+
+    .button1 {
+        height: 70px;
+        margin: 30px;
+        width: 100px;
+    }
+
+    .container {
+        margin: 70px auto;
+    }
+
+    #super-h1 {
+        margin: 60px auto;
+        font-size: 35px;
+    }
+
+    p {
+        margin: 60px auto;
+    }
+
+    #hud-h2 {
+        margin: 15px auto;
+    }
+
+    #header-title {
+        font-size: 110%;
+    }
+}

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbot-help-files/chatbot-help_estilo.css">
+    <link rel="stylesheet" href="chatbot-help-files/tabs/tabs_estilo.css">
+    <link rel="stylesheet" href="chatbot-help-files/hud/hud_estilo.css">
+    <link rel="stylesheet" href="chatbot-help-files/copytext/text-box_estilo.css">
+    <link rel="stylesheet" href="chatbot-help-files/media_style.css">
+    <link rel="shortcut icon" href="chatbot-img/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" type="image/x-icon">
+    <title>Chatbot Básico | Ajuda</title>
+</head>
+<body>
+    <header>
+        <img src="chatbot-img/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" alt="">
+        <p id="header-title">Chatbot Básico | Ajuda</p>
+    </header>
+
+    <div id="help-content">
+        <h1>Seja Bem Vindo à Página de Ajuda!</h1>
+        <p>Aqui você pode tirar as suas dúvidas sobre o Chatbot e evitar erros de digitação após enviar a sua resposta.<br>Ao arrastar para baixo, Escolha o Chatbot desejado (Chatbot Básico ou Chatbot Conversor). Em seguida, vai aparecer guias de respostas que estão ocultados, onde é necessário clicar o botão "Mostrar" para exibir todas as respostas. Você pode copiar a resposta desejada, colar e enviar para o Chatbot.</p>
+    </div>
+
+    <h2>Eu preciso de ajuda sobre:</h2>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Aba1')" id="defaultOpen" style="background-color: #ff4141; color: white; font-weight: bold;"><img src="chatbot-img/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" alt="Ajuda sobre Chatbot Básico" width="80px">Chatbot Básico</button>
+        <button class="tablinks" onclick="openTab(event, 'Aba2')" style="background-color: #00ff8c; color: black; font-weight: bold;"><img src="chatbot-conversor-files/bot_icon-chatbot_conversor-high-resolution-logo-transparent.png" alt="Ajuda sobre Chatbot Conversor" width="80px">Chatbot Conversor</button>
+    </div>
+
+    <div id="Aba1" class="tab-content">
+        <h2>Ajuda sobre o Chatbot Básico</h2>
+        <h3>Esta é a aba de respostas do Chatbot Básico, você pode procurar as respostas abaixo:</h3>
+
+        <div class="center-content">
+
+            <div class="hud" id="hudBox0">
+                <button id="toggleHudBtn0">Mostrar</button>
+                <p id="hud-h2">Primeiro Contato</p>
+                <p id="hudText0" style="display: none;">Diga o seu primeiro contato com o Chatbot:</p>
+
+                <div class="container" id="hudContent0" style="display: none;">
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-001">oi</div>
+                        <div class="button1" onclick="copyText001()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-002">olá</div>
+                        <div class="button1" onclick="copyText002()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-003">qual é o seu nome?</div>
+                        <div class="button1" onclick="copyText003()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-004">como você está?</div>
+                        <div class="button1" onclick="copyText004()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-005">ajuda</div>
+                        <div class="button1" onclick="copyText005()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-006">conversor</div>
+                        <div class="button1" onclick="copyText006()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-007">quem criou você?</div>
+                        <div class="button1" onclick="copyText007()">Copiar</div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <div class="hud" id="hudBox1">
+                <button id="toggleHudBtn1">Mostrar</button> <!-- Inicia como "Mostrar" -->
+                <p id="hud-h2">Respostas Pré-definidas</p>
+                <p id="hudText1" style="display: none;">Veja o que o chatbot é capaz de dar as suas respostas:</p>
+                
+                <div class="container" id="hudContent1" style="display: none;">
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy1">Ciência</div>
+                        <div class="button1" onclick="copyText1()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy2">Tecnologia</div>
+                        <div class="button1" onclick="copyText2()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy3">Moda</div>
+                        <div class="button1" onclick="copyText3()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy4">Esporte</div>
+                        <div class="button1" onclick="copyText4()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy5">Educação</div>
+                        <div class="button1" onclick="copyText5()">Copiar</div>
+                    </div>
+                    
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy6">Saúde</div>
+                        <div class="button1" onclick="copyText6()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy7">Música</div>
+                        <div class="button1" onclick="copyText7()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy8">Livro</div>
+                        <div class="button1" onclick="copyText8()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy9">Filme</div>
+                        <div class="button1" onclick="copyText9()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy10">Arte</div>
+                        <div class="button1" onclick="copyText10()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy11">História</div>
+                        <div class="button1" onclick="copyText11()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy12">Natureza</div>
+                        <div class="button1" onclick="copyText12()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy13">Viajar</div>
+                        <div class="button1" onclick="copyText13()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy14">Alimentação</div>
+                        <div class="button1" onclick="copyText14()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy15">Clima</div>
+                        <div class="button1" onclick="copyText15()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy16">Internet</div>
+                        <div class="button1" onclick="copyText16()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy17">Astronomia</div>
+                        <div class="button1" onclick="copyText17()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy18">Filosofia</div>
+                        <div class="button1" onclick="copyText18()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy19">Religião</div>
+                        <div class="button1" onclick="copyText19()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy20">Meditação</div>
+                        <div class="button1" onclick="copyText20()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy21">Teatro</div>
+                        <div class="button1" onclick="copyText21()">Copiar</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="hud" id="hudBox2">
+                <button id="toggleHudBtn2">Mostrar</button>
+                <p id="hud-h2">Dia a dia</p>
+                <p id="hudText2" style="display: none;">O chatbot é capaz de responder a data e o horário, Digite ou copie o exemplo das respostas abaixo:</p>
+
+                <div class="container" id="hudContent2" style="display: none;">
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-A">Horário</div>
+                        <div class="button1" onclick="copyTextA()">Copiar</div>
+                    </div>
+    
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-B">Que horas são?</div>
+                        <div class="button1" onclick="copyTextB()">Copiar</div>
+                    </div>
+    
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-C">Data</div>
+                        <div class="button1" onclick="copyTextC()">Copiar</div>
+                    </div>
+    
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-D">Que dia é hoje?</div>
+                        <div class="button1" onclick="copyTextD()">Copiar</div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+            <div class="hud" id="hudBox3">
+                <button id="toggleHudBtn3">Mostrar</button>
+                <p id="hud-h2">Exemplo de mídia</p>
+                <p id="hudText3" style="display: none;">O Chatbot fornece um exemplo de imagem e vídeo:</p>
+
+                <div class="container" id="hudContent3" style="display: none;">
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-M1">Imagem</div>
+                        <div class="button1" onclick="copyTextM1()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-M2">Vídeo</div>
+                        <div class="button1" onclick="copyTextM2()">Copiar</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hud" id="hudBox4">
+                <button id="toggleHudBtn4">Mostrar</button>
+                <p id="hud-h2">Matemática</p>
+                <p id="hudText4" style="display: none;">O Chatbot é capaz de fazer cálculos e expressões matemáticas, Digite ou copie as respostas abaixo:</p>
+
+                <div class="container" id="hudContent4" style="display: none;">
+
+                    <p id="super-h1">Operações</p>
+                    <h1>Digite por exemplo:</h1>
+
+                    <h2>Adição</h2>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01">2+2</div>
+                        <div class="button1" onclick="copyText01()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02">8+4</div>
+                        <div class="button1" onclick="copyText02()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03">9+13</div>
+                        <div class="button1" onclick="copyText03()">Copiar</div>
+                    </div>
+
+                    <h2>Subtração</h2>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-04">7-3</div>
+                        <div class="button1" onclick="copyText04()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-05">14-6</div>
+                        <div class="button1" onclick="copyText05()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-06">5-6</div>
+                        <div class="button1" onclick="copyText06()">Copiar</div>
+                    </div>
+
+                    <h2>Multiplicação</h2>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-07">2*4</div>
+                        <div class="button1" onclick="copyText07()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-08">18*5</div>
+                        <div class="button1" onclick="copyText08()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-09">7*7</div>
+                        <div class="button1" onclick="copyText09()">Copiar</div>
+                    </div>
+
+                    <h2>Divisão</h2>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-010">4/2</div>
+                        <div class="button1" onclick="copyText010()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-011">17/3</div>
+                        <div class="button1" onclick="copyText011()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-012">4/5</div>
+                        <div class="button1" onclick="copyText012()">Copiar</div>
+                    </div>
+
+
+
+                    <p id="super-h1">Raiz Quadrada</p>
+                    <h1>Digite por exemplo:</h1>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01a">raiz quadrada de 4</div>
+                        <div class="button1" onclick="copyText01A()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02a">raiz quadrada de 49</div>
+                        <div class="button1" onclick="copyText02A()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03a">raiz quadrada de 68</div>
+                        <div class="button1" onclick="copyText03A()">Copiar</div>
+                    </div>
+
+                    <h3>Você também pode digitar:</h3>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-04a">raiz de 45</div>
+                        <div class="button1" onclick="copyText04A()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-05a">raiz de 110</div>
+                        <div class="button1" onclick="copyText05A()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-06a">raiz de 89</div>
+                        <div class="button1" onclick="copyText06A()">Copiar</div>
+                    </div>
+
+                    <p id="super-h1">Trigonometria</p>
+
+                    <h1>Seno</h1>
+                    <h2>Digite por exemplo:</h2>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01b">sen 6</div>
+                        <div class="button1" onclick="copyText01B()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02b">sen 30</div>
+                        <div class="button1" onclick="copyText02B()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03b">sen 120</div>
+                        <div class="button1" onclick="copyText03B()">Copiar</div>
+                    </div>
+
+                    <h1>Cosseno</h1>
+                    <h2>Digite por exemplo:</h2>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01c">cos 30</div>
+                        <div class="button1" onclick="copyText01C()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02c">cos 8</div>
+                        <div class="button1" onclick="copyText02C()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03c">cos 137</div>
+                        <div class="button1" onclick="copyText03C()">Copiar</div>
+                    </div>
+
+                    <h1>Tangente</h1>
+                    <h2>Digite por exemplo:</h2>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01d">tan 7</div>
+                        <div class="button1" onclick="copyText01D()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02d">tan 60</div>
+                        <div class="button1" onclick="copyText02D()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03d">tan 124</div>
+                        <div class="button1" onclick="copyText03D()">Copiar</div>
+                    </div>
+
+                    <h1>Tabela Trigonométrica</h1>
+                    <h2>Digite:</h2>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01e">sen/30</div>
+                        <div class="button1" onclick="copyText01E()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02e">sen/45</div>
+                        <div class="button1" onclick="copyText02E()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03e">sen/60</div>
+                        <div class="button1" onclick="copyText03E()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-04e">cos/30</div>
+                        <div class="button1" onclick="copyText04E()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-05e">cos/45</div>
+                        <div class="button1" onclick="copyText05E()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-06e">cos/60</div>
+                        <div class="button1" onclick="copyText06E()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-07e">tan/30</div>
+                        <div class="button1" onclick="copyText07E()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-08e">tan/45</div>
+                        <div class="button1" onclick="copyText08E()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-09e">tan/60</div>
+                        <div class="button1" onclick="copyText09E()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-010e">Tabela Trigonométrica</div>
+                        <div class="button1" onclick="copyText010E()">Copiar</div>
+                    </div>
+
+                    <h1>Círculo Trigonométrico</h1>
+                    <h2>Digite:</h2>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-011e">Círculo Trigonométrico</div>
+                        <div class="button1" onclick="copyText011E()">Copiar</div>
+                    </div>
+
+                    <p id="super-h1">Logaritmo</p>
+                    <h1>Digite por exemplo:</h1>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01f">log 9</div>
+                        <div class="button1" onclick="copyText01F()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02f">log 20</div>
+                        <div class="button1" onclick="copyText02F()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03f">log 100</div>
+                        <div class="button1" onclick="copyText03F()">Copiar</div>
+                    </div>
+
+                    <p id="super-h1">Potenciação</p>
+                    <h1>Digite por exemplo:</h1>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01g">2y2</div>
+                        <div class="button1" onclick="copyText01G()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02g">7y6</div>
+                        <div class="button1" onclick="copyText02G()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03g">16y8</div>
+                        <div class="button1" onclick="copyText03G()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-04g">25y2</div>
+                        <div class="button1" onclick="copyText04G()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-05g">9y20</div>
+                        <div class="button1" onclick="copyText05G()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-06g">30y50</div>
+                        <div class="button1" onclick="copyText06G()">Copiar</div>
+                    </div>
+
+                    <p id="super-h1">Porcentagem</p>
+                    <h1>Digite por exemplo:</h1>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01h">50% de 12</div>
+                        <div class="button1" onclick="copyText01H()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02h">75% de 4</div>
+                        <div class="button1" onclick="copyText02H()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03h">110% de 67</div>
+                        <div class="button1" onclick="copyText03H()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-04h">5% de 90</div>
+                        <div class="button1" onclick="copyText04H()">Copiar</div>
+                    </div>
+
+                    <p id="super-h1">Fatorial</p>
+                    <h1>Digite por exemplo:</h1>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01i">fatorial de 4</div>
+                        <div class="button1" onclick="copyText01I()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02i">fatorial de 20</div>
+                        <div class="button1" onclick="copyText02I()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03i">fatorial de 55</div>
+                        <div class="button1" onclick="copyText03I()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-04i">fatorial de 120</div>
+                        <div class="button1" onclick="copyText04I()">Copiar</div>
+                    </div>
+
+                    <p id="super-h1">Valor de Pi</p>
+                    <h1>Digite:</h1>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01j">pi</div>
+                        <div class="button1" onclick="copyText01J()">Copiar</div>
+                    </div>
+
+                    <p>Para somar, subtrair, multiplicar ou dividir o valor de pi, copie o resultado enviado pelo Chatbot. Digite por exemplo:</p>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02j">12+3.141592653589793</div>
+                        <div class="button1" onclick="copyText02J()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03j">32+3.141592653589793</div>
+                        <div class="button1" onclick="copyText03J()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-04j">4-3.141592653589793</div>
+                        <div class="button1" onclick="copyText04J()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-05j">20-3.141592653589793</div>
+                        <div class="button1" onclick="copyText05J()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-06j">8*3.141592653589793</div>
+                        <div class="button1" onclick="copyText06J()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-07j">45*3.141592653589793</div>
+                        <div class="button1" onclick="copyText07J()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-08j">60/3.141592653589793</div>
+                        <div class="button1" onclick="copyText08J()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-09j">10/3.141592653589793</div>
+                        <div class="button1" onclick="copyText09J()">Copiar</div>
+                    </div>
+
+                    <p id="super-h1">Números Decimais</p>
+                    <h1>Digite por exemplo:</h1>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-01k">4.5+6.98</div>
+                        <div class="button1" onclick="copyText01K()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-02k">17.30+28.56</div>
+                        <div class="button1" onclick="copyText02K()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-03k">3.67-2.83</div>
+                        <div class="button1" onclick="copyText03K()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-04k">14.29-23.50</div>
+                        <div class="button1" onclick="copyText04K()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-05k">6.26*8.21</div>
+                        <div class="button1" onclick="copyText05K()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-06k">19.67*7.32</div>
+                        <div class="button1" onclick="copyText06K()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-07k">5.84/2.62</div>
+                        <div class="button1" onclick="copyText07K()">Copiar</div>
+                    </div>
+
+                    <div id="text-area">
+                        <div class="text-box" id="text-to-copy-08k">10.81/15.92</div>
+                        <div class="button1" onclick="copyText08K()">Copiar</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="Aba2" class="tab-content">
+        <h3>Conteúdo da Aba 2</h3>
+        <p>Este é o conteúdo da segunda aba.</p>
+    </div>
+
+    <script src="chatbot-help-files/tabs/tabs_script.js"></script>
+    <script src="chatbot-help-files/copytext/copytext_list1.js"></script>
+    <script src="chatbot-help-files/copytext/copytext_list2.js"></script>
+    <script src="chatbot-help-files/copytext/copytext_list3.js"></script>
+    <script src="chatbot-help-files/copytext/copytext_list4.js"></script>
+    <script src="chatbot-help-files/hud/huds-script-lists/hud_script0.js"></script>
+    <script src="chatbot-help-files/hud/huds-script-lists/hud_script1.js"></script>
+    <script src="chatbot-help-files/hud/huds-script-lists/hud_script2.js"></script>
+    <script src="chatbot-help-files/hud/huds-script-lists/hud_script3.js"></script>
+    <script src="chatbot-help-files/hud/huds-script-lists/hud_script4.js"></script>
+    <script src="chatbot-help-files/copytext/clipboard.js"></script>
+</body>
+</html>

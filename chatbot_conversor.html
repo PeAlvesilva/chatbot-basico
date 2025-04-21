@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbot-conversor-files/chatbot_conversor_estilo.css">
+    <link rel="stylesheet" href="chatbot-conversor-files/tabs/chatconv_estilo_tab.css">
+    <link rel="stylesheet" href="chatbot-conversor-files/light&dark-mode/ldm_estilo.css">
+    <link rel="stylesheet" href="chatbot-conversor-files/media_style.css">
+    <link rel="stylesheet" href="chatbot-conversor-files/sidebar/sidebar_estilo.css">
+    <link rel="stylesheet" href="chatbot-tools/load/loading-spin.css">
+    <link rel="shortcut icon" href="chatbot-conversor-files/bot_icon-chatbot_conversor-high-resolution-logo-transparent.png" type="image/x-icon">
+    <title>Chatbot Conversor</title>
+</head>
+<body>
+    
+    <!-- Botão de ocultar/mostrar menu lateral -->
+<button id="toggleBtn">Mostrar Menu</button>
+
+<!-- Menu lateral -->
+<div class="sidebar hidden" id="sidebar">
+    <ul>
+        <li><img src='chatbot-img/bot_icon-chatbot_basico-high-resolution-logo-transparent.png' alt='Ir para Chatbot Básico' width='80px'><a href="chatbot_basico6.html">Chatbot Básico</a></li>
+    </ul>
+    <div id="color-btn-area">
+        <button class="color-btn" style="background-color: rgb(255, 255, 255);" onclick="modoClaro()">Modo Claro</button>
+    <button class="color-btn" style="background-color: rgb(25, 25, 25); color: white;" onclick="modoEscuro()">Modo Escuro</button>
+    </div>
+</div>
+
+    <!-- Aba 1: Conversor de números -->
+    <div id="Aba1" class="tab-content">
+        <div id="chat-window-1">
+
+
+            <div class="notification"> 
+                <span class="close" onclick="this.parentElement.style.display='none'">&times;</span>
+                <img src="chatbot-conversor-files/bot_icon-chatbot_conversor-high-resolution-logo-transparent.png" alt="logo chatbot conversor" width="150px">
+                <h1>Conheça o Chatbot Conversor!</h1>
+                <p>Este Chatbot é capaz de converter números decimais, binários, hexadecimais e octais.</p>
+                </div></p>
+
+
+                <div class="notification" style="list-style: none;"> 
+                    <span class="close" onclick="this.parentElement.style.display='none'">&times;</span>
+                    <p>Você está no modo:<p id="font-bold" style="font-size: 20px;">Conversão automática de números</p>Isso significa que o Chatbot Conversor
+                    vai fazer a conversão de <br>números de uma forma mais rápida, completa e automática, digite por exemplo: <br> <br>
+                    <div id="font-italic">
+                        <li>34 decimal</li>
+                        <li>67 decimal</li>
+                        <li>112 dec</li>
+                        <li>10 binário</li>
+                        <li>1010 binario</li>
+                        <li>1101 bin</li>
+                        <li>56 hexadecimal</li>
+                        <li>78 hex</li>
+                        <li>27 octal</li>
+                        <li>126 oct</li>
+                    </div>
+                    <p>Automaticamente, O bot vai enviar uma mensagem para você. trazendo a resposta exata da <br>conversão do número e de todas as bases numéricas de <br> 
+                        acordo com o número escolhido. 
+                        Para mais detalhes do Chatbot Conversor, clique <a href="">aqui</a>.
+                    </p></div>
+
+
+        </div>
+        <div id="input-area">
+            <input type="text" id="user-input-1" placeholder="Digite sua conversão...">
+            <button id="send-btn-1">Enviar</button>
+        </div>
+        <script src="chatbot-conversor-files/chatbot_convert_n_script.js"></script>
+    </div>
+    
+    <!-- Aba 2: Conversor de bases -->
+    <div id="Aba2" class="tab-content">
+        <div id="chat-window-2" class="chat-box">
+
+
+            <div class="notification" style="list-style: none;"> 
+                <span class="close" onclick="this.parentElement.style.display='none'">&times;</span>
+                <p>Você está no modo:<p id="font-bold" style="font-size: 20px;">Conversão de bases</p>Isso significa que o Chatbot Conversor
+                vai fazer a conversão de <br>números de uma forma mais objetiva, exata e automática, digite por exemplo: <br> <br>
+                <div id="font-italic">
+                    <li>42 de decimal para binário</li>
+                    <li>71 de decimal para hexadecimal</li>
+                    <li>149 de decimal para octal</li>
+                    <li>101 de binario para decimal</li>
+                    <li>1110010 de binário para octal</li>
+                    <li>0011 de binario para hexadecimal</li>
+                    <li>93 de hexadecimal para binario</li>
+                    <li>55 de hexadecimal para decimal</li>
+                    <li>28 de hexadecimal para octal</li>
+                    <li>115 de octal para decimal</li>
+                    <li>63 de octal para hexadecimal</li>
+                    <li>279 de octal para binário</li>
+                </div>
+                <p>Automaticamente, O bot vai enviar uma mensagem para você. trazendo a resposta exata da <br>conversão do número de acordo com a base escolhida. 
+                    Para mais detalhes do Chatbot Conversor, clique <a href="">aqui</a>.
+                </p></div>
+
+
+        </div>
+        <div id="input-area">
+            <input type="text" id="user-input-2" placeholder="Digite sua conversão...">
+            <button id="send-btn-2">Enviar</button>
+        </div>
+        <script src="chatbot-conversor-files/chatbot_convert_b_script.js"></script>
+    </div>
+    
+    <!-- Navegação entre abas -->
+    <div class="tab-convert">
+        <button style="border: 1px solid #00ff8c;" class="tablinks" onclick="openTab(event, 'Aba1')" id="defaultOpen">Conversão automática de números</button>
+        <button style="border: 1px solid #00ff8c;" class="tablinks" onclick="openTab(event, 'Aba2')">Conversão de bases</button>
+    </div>
+    
+    <script src="chatbot-conversor-files/light&dark-mode/ldm_script.js"></script>
+    <script src="chatbot-conversor-files/tabs/chatconv_tab_script.js"></script>
+    <script src="chatbot-conversor-files/sidebar/sidebar_script.js"></script>
+
+</body>
+</html>

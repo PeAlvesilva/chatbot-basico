@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbot_basico6_estilo.css">
+    <link rel="stylesheet" href="chatbot-tools/light&dark-mode/ldm_estilo.css">
+    <link rel="stylesheet" href="chatbot-tools/sidebar/sidebar_estilo.css">
+    <link rel="stylesheet" href="media_style.css">
+    <link rel="stylesheet" href="chatbot-tools/load/loading-spin.css">
+    <link rel="icon" href="chatbot-img/FreeSample-Vectorizer-io-bot_icon-chatbot_basico-high-resolution-logo-transparent.svg" type="image/svg+xml">
+    
+    <title>Chatbot Básico</title>
+</head>
+<body>
+
+<!-- Botão de ocultar/mostrar menu lateral -->
+<button id="toggleBtn">Mostrar Menu</button>
+
+<!-- Menu lateral -->
+<div class="sidebar hidden" id="sidebar">
+    <ul>
+        <li><img src='chatbot-conversor-files/bot_icon-chatbot_conversor-high-resolution-logo-transparent.png' alt='Exemplo de imagem' width='60px' style="width: 100px;"><a href="chatbot_conversor.html">Chatbot Conversor</a></li>
+    </ul>
+    <div id="color-btn-area">
+        <button class="color-btn" style="background-color: rgb(255, 255, 255);" onclick="modoClaro()">Modo Claro</button>
+    <button class="color-btn" style="background-color: rgb(25, 25, 25); color: white;" onclick="modoEscuro()">Modo Escuro</button>
+    </div>
+</div>
+
+
+    <div id="chat-window">
+
+        <div class="notification"> 
+            <span class="close" onclick="this.parentElement.style.display='none'">&times;</span>
+            <p><div id="font-bold">NÃO SABE O QUE DIGITAR?</div><br>caso esteja com dúvida ou não saiba o que digitar,
+                clique <a href="chatbot_basico_help.html" target="_blank">Aqui</a> para saber mais sobre as
+                respostas do Chatbot ou digite<br><br><div id="font-italic" style="font-weight: bold;">Ajuda</div> <br> e clique em 
+                <br><br><div id="font-bold" style="background-color: #007bff; padding: 10px; color: white; width: 80px; border-radius: 15px; margin: 0 auto;">Enviar</div>
+                <br>Automaticamente, o bot vai enviar uma mensagem para você. indicando um link para a página de ajuda.
+            </div></p>
+    </div>
+    
+    <div id="input-area">
+        <input type="text" id="user-input" placeholder="Digite sua mensagem ou cálculo...">
+        <button id="send-btn" aria-label="Enviar">Enviar</button>
+    </div>
+
+    <script src="chatbot_basico6_script.js"></script>
+    <script src="bot_response.js"></script>
+    <script src="send.js"></script>
+    <script src="chatbot-tools/light&dark-mode/ldm_script.js"></script>
+    <script src="chatbot-tools/sidebar/sidebar_script.js"></script>
+</body>
+</html>
