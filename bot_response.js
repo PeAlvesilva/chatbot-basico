@@ -182,16 +182,13 @@ function isMathExpression(message) {
 function botResponseforUN(nome) {
     const user = document.getElementById('user');
 
-    if (user.value === userinputforUN) {  
-        setTimeout(() => { // Adiciona um atraso antes de exibir a mensagem
+    if (user === userinputforUN) {  
             var botMessage1 = document.createElement("div");
             botMessage1.classList.add("bot-message1");
             botMessage1.textContent = `É um grande prazer em te conhecer, ${nome}!`;
-
             chatBox.appendChild(botMessage1);
             chatBox.scrollTop = chatBox.scrollHeight;
+        }
 
-            return botMessage1;
-        }); // Atraso de 1 segundo (1000 ms)
-    }
+    return botMessage1;
 }
