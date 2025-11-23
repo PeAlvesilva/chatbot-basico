@@ -11,7 +11,7 @@ toggleHudBtn1.addEventListener('click', function () {
         // Verifica a largura da janela para ajustar largura e altura
         if (window.innerWidth > 600) {
             hudBox1.style.width = '625px'; // Expande para o tamanho original em telas maiores
-            hudBox1.style.height = '3200px'; // Altura expandida para telas maiores
+            hudBox1.style.height = '3010px'; // Altura expandida para telas maiores
         } else {
             hudBox1.style.width = '350px'; // Ajusta largura para telas menores
             hudBox1.style.height = '3170px'; // Altura expandida para telas menores

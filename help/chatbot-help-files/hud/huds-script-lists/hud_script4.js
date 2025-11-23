@@ -11,10 +11,10 @@ toggleHudBtn4.addEventListener('click', function () {
         // Verifica a largura da janela para ajustar largura e altura
         if (window.innerWidth > 600) {
             hudBox4.style.width = '625px'; // Expande para o tamanho original em telas maiores
-            hudBox4.style.height = '12550px'; // Altura expandida para telas maiores
+            hudBox4.style.height = '12190px'; // Altura expandida para telas maiores
         } else {
             hudBox4.style.width = '350px'; // Ajusta largura para telas menores
-            hudBox4.style.height = '13850px'; // Altura expandida para telas menores
+            hudBox4.style.height = '14250px'; // Altura expandida para telas menores
         }
 
         toggleHudBtn4.textContent = 'Ocultar';

@@ -37,8 +37,14 @@
     padding: 20px;
 }
 
-.sidebar ul li a:hover {
+.chatbot-basico-btn:hover {
     background-color: #ff4141;
+    color: black;
+    border-radius: 15px;
+}
+
+.novidades-btn:hover {
+    background-color: #33fff5;
     color: black;
     border-radius: 15px;
 }
