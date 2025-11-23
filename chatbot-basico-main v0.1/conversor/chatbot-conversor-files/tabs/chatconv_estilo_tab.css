@@ -1,0 +1,35 @@
+/* Estilo para as abas */
+.tab-convert {
+    display: flex;
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    justify-content: center;
+}
+
+.tab-convert button {
+    padding: 20px 40px;
+    background-color: #fff1f1;
+    border: none;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.tab-convert button:hover {
+    background-color: #009c56;
+}
+
+.tab-convert button.active {
+    background-color: #00ff8c;
+    color: black;
+}
+
+/* Estilo para o conteúdo das abas */
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
