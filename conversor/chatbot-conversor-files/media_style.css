@@ -1,0 +1,49 @@
+@media (max-width: 600px) {
+    body {
+        font-size: 140%;
+        height: 126vh;
+    }
+
+    #input-area{
+        width: 425px;
+    }
+
+    #chat-window-1 {
+        width: 400px;
+    }
+
+    #chat-window-2 {
+        width: 400px;
+    }
+
+    #user-input-1 {
+        width: 250px;
+    }
+
+    #user-input-2 {
+        width: 250px;
+    }
+
+    .user-message, .bot-message {
+        border-radius: 20px;
+    }
+
+    iframe {
+        width: 250px;
+        height: 150px;
+    }
+
+    .notification {
+        padding: 2px;
+    }
+
+    a {
+        font-size: 25px;
+    }
+
+    #toggleBtn {
+        padding: 10px;
+        top: 7px;
+        left: 7px;
+    }
+}
