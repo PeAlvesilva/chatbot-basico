@@ -1,4 +1,4 @@
-## novidades.chatbot-basico
+## chatbot-basico
 
 
 # 🤖 Novidade: Lançamento da versão 0.1
