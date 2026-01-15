@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_chatbot-help-files/chatbot-help_estilo.css">
+    <link rel="stylesheet" href="_chatbot-help-files/tabs/tabs_estilo.css">
+    <link rel="stylesheet" href="_chatbot-help-files/copytext/text-box_estilo.css">
+    <link rel="stylesheet" href="_chatbot-help-files/media_style.css">
+    <link rel="stylesheet" href="_chatbot-help-files/menu-accordion/menu-ac_estilo.css">
+    <title>Chatbot Básico | Ajuda</title>
+    <link rel="shortcut icon" href="_chatbot-help-files/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="_chatbot-help-files/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" alt="">
+            <p id="header-title">Chatbot Básico | Ajuda</p>
+        </div>
+    </header>
+
+    <div id="help-content">
+        <h1>Seja Bem Vindo à Página de Ajuda!</h1>
+        <p>Aqui você pode tirar as suas dúvidas sobre o Chatbot e evitar erros de digitação após enviar a sua resposta.<br>Ao arrastar para baixo, Escolha o Chatbot desejado (Chatbot Básico ou Chatbot Numérico). Em seguida, vai aparecer guias de respostas que estão ocultados, onde é necessário clicar o botão <button class="icone-btn">▲</button> para exibir todas as respostas. Você pode copiar a resposta desejada, colar e enviar para o Chatbot. Exceto o guia de resposta <b>Divisão com Resto</b>, pois as caixas de texto estão divididas e a função de cópia não está disponível no momento.</p>
+    </div>
+
+    <h2>Eu preciso de ajuda sobre:</h2>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Aba1')" id="defaultOpen" style="background-color: #ff4141; color: white; font-weight: bold;"><img src="_chatbot-help-files/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" alt="Ajuda sobre Chatbot Básico" width="80px">Chatbot Básico</button>
+        <button class="tablinks" onclick="openTab(event, 'Aba2')" style="background-color: #00ff8c; color: black; font-weight: bold;"><img src="_chatbot-help-files/bot_icon-chatbot_conversor-high-resolution-logo-transparent.png" alt="Ajuda sobre Chatbot Conversor" width="80px">Chatbot Numérico</button>
+    </div>
+
+    <!-- Aba Chatbot Básico -->
+
+    <div id="Aba1" class="tab-content">
+        <h2>Ajuda sobre o Chatbot Básico</h2>
+        <p>Esta é a aba de respostas do Chatbot Básico, você pode procurar as respostas abaixo:</p>
+
+        <div class="center-content">
+
+            <div class="menu" id="menu">
+                <div class="menu-header" onclick="toggleMenu()">
+                    <span>Primeiro Contato</span>
+                    <button class="toggle-btn">▲</button>
+                </div>
+
+                <div id="primeiro contato"></div>
+            </div>
+
+
+            <div class="menu" id="menu2">
+                <div class="menu-header" onclick="toggleMenu2()">
+                    <span>Respostas Pré-definidas</span>
+                    <button class="toggle-btn">▲</button>
+                </div>
+
+                <div id="respostas predefinidas"></div>
+            </div>
+
+
+            <div class="menu" id="menu3">
+                <div class="menu-header" onclick="toggleMenu3()">
+                    <span>Dia a dia</span>
+                    <button class="toggle-btn">▲</button>
+                </div>
+
+                <div id="dia a dia"></div>
+            </div>
+
+            <div class="menu" id="menu4">
+                <div class="menu-header" onclick="toggleMenu4()">
+                    <span>Exemplo de mídia</span>
+                    <button class="toggle-btn">▲</button>
+                </div>
+
+                <div id="exemplo de midia"></div>
+            </div>
+
+            <div class="menu" id="menu5">
+                <div class="menu-header" onclick="toggleMenu5()">
+                    <span>Matemática Básica</span>
+                    <button class="toggle-btn">▲</button>
+                </div>
+
+                <div id="matematica basica"></div>
+            </div>
+
+            <div class="menu" id="menu6">
+                <div class="menu-header" onclick="toggleMenu6()">
+                    <span>Matemática Avançada</span>
+                    <button class="toggle-btn">▲</button>
+                </div>
+
+                <div id="matematica avançada"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Aba Chatbot Numérico -->
+
+    <div id="Aba2" class="tab-content">
+        <h2>Ajuda sobre o Chatbot Numérico</h2>
+        <p>Esta é a aba de respostas do Chatbot Numérico, você pode procurar as respostas abaixo:</p>
+
+
+
+        <div class="center-content">
+
+            <div class="menu" id="menu7">
+                <div class="menu-header" onclick="toggleMenu7()">
+                    <span>Divisão com Resto</span>
+                    <button class="toggle-btn">▲</button>
+                </div>
+
+                <div id="divisão com resto"></div>
+            </div>
+
+            <div class="menu" id="menu8">
+                <div class="menu-header" onclick="toggleMenu8()">
+                    <span>Conversões de Números</span>
+                    <button class="toggle-btn">▲</button>
+                </div>
+
+                <div id="conversão de números"></div>
+            </div>
+    </div>
+
+    <script src="_chatbot-help-files/tabs/tabs_script.js"></script>
+    <script src="_chatbot-help-files/copytext/copytext_list0.js"></script>
+    <script src="_chatbot-help-files/copytext/copytext_list1.js"></script>
+    <script src="_chatbot-help-files/copytext/copytext_list2.js"></script>
+    <script src="_chatbot-help-files/copytext/copytext_list3.js"></script>
+    <script src="_chatbot-help-files/copytext/copytext_list4.js"></script>
+    <script src="_chatbot-help-files/copytext/copytext_list5.js"></script>
+    <script src="_chatbot-help-files/copytext/clipboard.js"></script>
+    <script src="_chatbot-help-files/menu-accordion/menu-ac_scripts.js"></script>
+    <script src="js/include.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_styles/chatbot_basico_estilo.css">
+    <link rel="stylesheet" href="_chatbot-tools/light&dark-mode/ldm_estilo.css">
+    <link rel="stylesheet" href="_chatbot-tools/sidebar/sidebar_estilo.css">
+    <link rel="stylesheet" href="_styles/media_style.css">
+    <link rel="stylesheet" href="_chatbot-tools/load/loading-spin.css">
+    <link rel="stylesheet" href="_chatbot-tools/tabs/tab_style.css">
+    <link rel="stylesheet" href="_chatbot-numerico-files/styles/chatbot_numerico_estilo.css">
+    <link rel="stylesheet" href="_chatbot-numerico-files/tabs/chatnum_estilo_tab.css">
+    <link rel="stylesheet" href="_chatbot-numerico-files/styles/media_style.css">
+    <link rel="shortcut icon" href="chatbot_img/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" type="image/x-icon">
+
+    <title>Chatbot Básico</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body> 
+
+<!-- Botão de ocultar/mostrar menu lateral -->
+<button id="toggleBtn">☰</button> 
+
+
+<!-- Menu lateral -->
+
+<div class="sidebar hidden" id="sidebar">
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Aba1')" id="defaultOpen"><img src="_chatbot-numerico-files/img/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" alt="chatbot basico" id="img-tab1"><p>Chatbot Básico</p></button>
+        <button class="tablinks" onclick="openTab(event, 'Aba2')"><img src="_chatbot-numerico-files/img/bot_icon-chatbot_conversor-high-resolution-logo-transparent.png" alt="chatbot numerico" id="img-tab1"><p>Chatbot Numérico</p></button>
+    </div>
+    
+    <div id="color-btn-area">
+        <button class="color-btn" style="background-color: #ffffff;" onclick="modoClaro()">Modo Claro</button>
+        <button class="color-btn" style="background-color: #191919; color: white;" onclick="modoEscuro()">Modo Escuro</button>
+    </div>
+
+    <hr style="background-color: #a0a0a0;">
+
+    <ul>
+        <li><a href="ajuda/" id="help-btn" rel="noopener noreferrer" target="_blank">Ajuda</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="notas-tecnicas-chatbot-v02.html" target="_blank" rel="noopener noreferrer" class="novidades-btn">Novidades</a></li>
+    </ul>
+
+    <p><strong>Versão:</strong> 0.2</p>
+</div>
+
+
+<!-- Conteúdo principal (Chatbot Básico e Chatbot Numérico)-->
+
+<div class="content" id="content">
+
+    <!-- Chatbot Básico -->
+    <div id="Aba1" class="tab-content">
+
+        <div id="chat-window">
+
+        <div id="notification"> 
+            <h4 id="font-bold">NÃO SABE O QUE DIGITAR?</h4><br>caso esteja com dúvida ou não saiba o que digitar, Abra o menu lateral e clique no botão "Ajuda" para saber mais sobre as
+                respostas do Chatbot ou digite <p class="tooltip-item" onclick="digiteAjuda('Ajuda')">Ajuda</p> <br> e clique em 
+                <br><br><div id="font-bold" style="background-color: #007bff; padding: 10px; color: white; width: 80px; border-radius: 15px; margin: 0 auto; cursor:cell;">Enviar</div>
+                <br>Automaticamente, o bot vai enviar uma mensagem para você. indicando um link para a página de ajuda.
+        </div>
+
+    </div>
+    
+    <div id="input-area">
+        <input type="text" id="user-input" placeholder="Digite sua mensagem ou cálculo...">
+        <button id="send-btn" aria-label="Enviar">Enviar</button>
+    </div>
+    </div>
+
+    <!-- Chatbot Numérico-->
+
+    <div id="Aba2" class="tab-content">
+        
+            <div class="tab-convert">
+                <button style="border: 1px solid #00ff8c; border-bottom-left-radius: 15px; border-top-left-radius: 15px;" class="tablinks-1" onclick="abaChatnum(event, 'Aba3')" id="defaultOpen2"><img src="_chatbot-numerico-files/img/division-with-remainder-high-resolution-logo-transparent.png" alt="divisao com resto" id="img-divisao-com-resto">Divisão com resto</button>
+                <button style="border: 1px solid #00ff8c; border-bottom-right-radius: 15px; border-top-right-radius: 15px;" class="tablinks-1" onclick="abaChatnum(event, 'Aba4')"><img src="_chatbot-numerico-files/img/binary-icon-high-resolution-logo-transparent.png" alt="conversao de bases" id="img-conversao-de-bases">Conversão de bases</button>
+            </div>
+
+            <!-- Chatbot Numérico (modo: divisão com resto)-->
+
+            <div id="Aba3" class="tab-content2">
+                <div id="chat-window-2"><b>Modo:</b> Divisão com resto</div>
+
+                <div id="input-area2">
+                    <input type="number" id="numerator" placeholder="Dividendo"/>
+                    <input type="number" id="denominator" placeholder="Divisor"/>
+                    <button id="send-btn-2" onclick="calculate()">Calcular</button>
+                 </div>
+                <script src="_chatbot-numerico-files/scripts/chatbot_d-remainder_script.js"></script>
+            </div>
+
+
+            <!-- Chatbot Numérico (modo: conversão de bases)-->
+
+            <div id="Aba4" class="tab-content2"> 
+                <div id="chat-window-3"><b>Modo:</b> Conversão de bases</div>
+
+                <div id="input-area2">
+                    <input type="text" id="user-input-3" placeholder="Digite sua conversão..."/>
+                    <button id="send-btn-3">Converter</button>
+                </div>
+               <script src="_chatbot-numerico-files/scripts/chatbot_convert_n_script.js"></script>
+            </div>
+
+    </div>
+
+
+
+
+</div>
+    
+
+    <script src="_scripts/chatbot_basico_script.js"></script>
+    <script src="_scripts/bot_response.js"></script>
+    <script src="_scripts/send.js"></script> 
+    <script src="_chatbot-tools/tabs/tab_script.js"></script>
+    <script src="_chatbot-tools/light&dark-mode/ldm_script.js"></script>
+    <script src="_chatbot-tools/sidebar/sidebar_script.js"></script>
+    <script src="_chatbot-numerico-files/tabs/chatnum_tab_script.js"></script>
+</body>
+</html>
