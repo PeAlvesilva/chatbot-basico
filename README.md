@@ -1,19 +1,18 @@
-## chatbot-basico
+# chatbot-basico
 
+# ✨ Novidade: Lançamento da versão 0.2
 
-# 🤖 Novidade: Lançamento da versão 0.1
-
-**Data de lançamento:** 23/11/2025  
+**Data de lançamento:** 15/01/2026  
 **Versões disponíveis:**  
 - 🗣️ **Chatbot Básico**  
-- 🔢 **Chatbot Conversor**
+- 🔢 **Chatbot Numérico**
 
 
 
-A primeira versão do Chatbot já está no ar! 🎉
-A v0.1 apresenta duas versões iniciais — **Chatbot Básico** e **Chatbot Conversor** — trazendo respostas pré-definidas, operações matemáticas e conversão entre bases numéricas. Esta é a base do projeto, preparada para futuras expansões e melhorias.
+A versão **0.2** do Chatbot já está disponível! 🚀
+Esta atualização traz melhorias de usabilidade, novo visual com a fonte **Rubik**, integração direta com o site de ajuda e a substituição do Chatbot Conversor pelo novo Chatbot Numérico, que inclui divisão com resto e conversão automática de bases.
 
-Para saber mais sobre a atualização, clique aqui para abrir a ficha técnica: [Chatbot v0.1 – Notas Técnicas de Lançamento](https://pealvesilva.github.io/chatbot-basico/notas-tecnicas-chatbot-v01.html)
+Para saber mais sobre a atualização, clique aqui para abrir a ficha técnica: [Chatbot v0.2 – Notas Técnicas de Lançamento](https://pealvesilva.github.io/chatbot-basico/notas-tecnicas-chatbot-v02.html)
 
 ---
 
