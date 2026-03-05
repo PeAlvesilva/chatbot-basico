@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/chatbot_basico_estilo.css">
-    <link rel="stylesheet" href="chatbot-tools/light&dark-mode/ldm_estilo.css">
-    <link rel="stylesheet" href="chatbot-tools/sidebar/sidebar_estilo.css">
-    <link rel="stylesheet" href="styles/media_style.css">
-    <link rel="stylesheet" href="chatbot-tools/load/loading-spin.css">
-    <link rel="stylesheet" href="chatbot-tools/tabs/tab_style.css">
-    <link rel="stylesheet" href="chatbot-numerico-files/styles/chatbot_numerico_estilo.css">
-    <link rel="stylesheet" href="chatbot-numerico-files/tabs/chatnum_estilo_tab.css">
-    <link rel="stylesheet" href="chatbot-numerico-files/styles/media_style.css">
+    <link rel="stylesheet" href="styles_/chatbot_basico_estilo.css">
+    <link rel="stylesheet" href="chatbot-tools_/light&dark-mode/ldm_estilo.css">
+    <link rel="stylesheet" href="chatbot-tools_/sidebar/sidebar_estilo.css">
+    <link rel="stylesheet" href="styles_/media_style.css">
+    <link rel="stylesheet" href="chatbot-tools_/load/loading-spin.css">
+    <link rel="stylesheet" href="chatbot-tools_/tabs/tab_style.css">
+    <link rel="stylesheet" href="chatbot-numerico-files_/styles/chatbot_numerico_estilo.css">
+    <link rel="stylesheet" href="chatbot-numerico-files_/tabs/chatnum_estilo_tab.css">
+    <link rel="stylesheet" href="chatbot-numerico-files_/styles/media_style.css">
     <link rel="shortcut icon" href="chatbot_img/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" type="image/x-icon">
 
     <title>Chatbot Básico</title>
@@ -31,8 +31,8 @@
 <div class="sidebar hidden" id="sidebar">
 
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Aba1')" id="defaultOpen"><img src="chatbot-numerico-files/img/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" alt="chatbot basico" id="img-tab1"><p>Chatbot Básico</p></button>
-        <button class="tablinks" onclick="openTab(event, 'Aba2')"><img src="chatbot-numerico-files/img/bot_icon-chatbot_conversor-high-resolution-logo-transparent.png" alt="chatbot numerico" id="img-tab1"><p>Chatbot Numérico</p></button>
+        <button class="tablinks" onclick="openTab(event, 'Aba1')" id="defaultOpen"><img src="chatbot-numerico-files_/img/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" alt="chatbot basico" id="img-tab1"><p>Chatbot Básico</p></button>
+        <button class="tablinks" onclick="openTab(event, 'Aba2')"><img src="chatbot-numerico-files_/img/bot_icon-chatbot_conversor-high-resolution-logo-transparent.png" alt="chatbot numerico" id="img-tab1"><p>Chatbot Numérico</p></button>
     </div>
     
     <div id="color-btn-area">
@@ -78,8 +78,8 @@
     <div id="Aba2" class="tab-content">
         
             <div class="tab-convert">
-                <button style="border: 1px solid #00ff8c; border-bottom-left-radius: 15px; border-top-left-radius: 15px;" class="tablinks-1" onclick="abaChatnum(event, 'Aba3')" id="defaultOpen2"><img src="chatbot-numerico-files/img/division-with-remainder-high-resolution-logo-transparent.png" alt="divisao com resto" id="img-divisao-com-resto">Divisão com resto</button>
-                <button style="border: 1px solid #00ff8c; border-bottom-right-radius: 15px; border-top-right-radius: 15px;" class="tablinks-1" onclick="abaChatnum(event, 'Aba4')"><img src="chatbot-numerico-files/img/binary-icon-high-resolution-logo-transparent.png" alt="conversao de bases" id="img-conversao-de-bases">Conversão de bases</button>
+                <button style="border: 1px solid #00ff8c; border-bottom-left-radius: 15px; border-top-left-radius: 15px;" class="tablinks-1" onclick="abaChatnum(event, 'Aba3')" id="defaultOpen2"><img src="chatbot-numerico-files_/img/division-with-remainder-high-resolution-logo-transparent.png" alt="divisao com resto" id="img-divisao-com-resto">Divisão com resto</button>
+                <button style="border: 1px solid #00ff8c; border-bottom-right-radius: 15px; border-top-right-radius: 15px;" class="tablinks-1" onclick="abaChatnum(event, 'Aba4')"><img src="chatbot-numerico-files_/img/binary-icon-high-resolution-logo-transparent.png" alt="conversao de bases" id="img-conversao-de-bases">Conversão de bases</button>
             </div>
 
             <!-- Chatbot Numérico (modo: divisão com resto)-->
@@ -92,7 +92,7 @@
                     <input type="number" id="denominator" placeholder="Divisor"/>
                     <button id="send-btn-2" onclick="calculate()">Calcular</button>
                  </div>
-                <script src="chatbot-numerico-files/scripts/chatbot_d-remainder_script.js"></script>
+                <script src="chatbot-numerico-files_/scripts/chatbot_d-remainder_script.js"></script>
             </div>
 
 
@@ -105,7 +105,7 @@
                     <input type="text" id="user-input-3" placeholder="Digite sua conversão..."/>
                     <button id="send-btn-3">Converter</button>
                 </div>
-               <script src="chatbot-numerico-files/scripts/chatbot_convert_n_script.js"></script>
+               <script src="chatbot-numerico-files_/scripts/chatbot_convert_n_script.js"></script>
             </div>
 
     </div>
@@ -116,13 +116,13 @@
 </div>
     
 
-    <script src="scripts/chatbot_basico_script.js"></script>
-    <script src="scripts/bot_response.js"></script>
-    <script src="scripts/send.js"></script> 
-    <script src="chatbot-tools/tabs/tab_script.js"></script>
-    <script src="chatbot-tools/light&dark-mode/ldm_script.js"></script>
-    <script src="chatbot-tools/sidebar/sidebar_script.js"></script>
-    <script src="chatbot-numerico-files/tabs/chatnum_tab_script.js"></script>
+    <script src="scripts_/chatbot_basico_script.js"></script>
+    <script src="scripts_/bot_response.js"></script>
+    <script src="scripts_/send.js"></script> 
+    <script src="chatbot-tools_/tabs/tab_script.js"></script>
+    <script src="chatbot-tools_/light&dark-mode/ldm_script.js"></script>
+    <script src="chatbot-tools_/sidebar/sidebar_script.js"></script>
+    <script src="chatbot-numerico-files_/tabs/chatnum_tab_script.js"></script>
     <script src="js/include.js"></script>
 </body>
 </html>
