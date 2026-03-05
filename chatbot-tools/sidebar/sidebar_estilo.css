@@ -1,0 +1,79 @@
+/* Estilo do menu lateral */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease;
+}
+
+/* Estilo para ocultar o menu lateral */
+.sidebar.hidden {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 7px 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+#chatbot-conversor-btn:hover {
+    background-color: #00ff8c;
+    border-radius: 15px;
+    color: black;
+}
+
+#help-btn {
+    background-color: #ff4141;
+    border-radius: 15px;
+    color: white;
+}
+/* Botão para ocultar/mostrar o menu */
+#toggleBtn {
+    background-color: #333;
+    color: white;
+    border: 3px solid #b3b3b3;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#toggleBtn.hidden {
+    left: 0;
+}
+
+#toggleBtn:hover {
+    background-color: #c7c7c7;
+}
+
+.novidades-btn:hover {
+    background-color: #33fff5;
+    color: black;
+    border-radius: 15px;
+}

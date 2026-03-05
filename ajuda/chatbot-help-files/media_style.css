@@ -1,0 +1,110 @@
+@media (max-width: 700px) {
+
+    .hud {
+        width: 350px;
+        text-align: center;
+    }
+
+    header {
+        padding: 5px;
+        height: 100px;
+    }
+
+    header img {
+        width: 80px;
+        height: 80px;
+        margin: 2px auto;
+    }
+
+    img {
+        width: 60px;
+    }
+
+    /*
+    h1 {
+        font-size: 107%;
+        margin: 55px auto;
+    }
+
+    h2 {
+        font-size: 106%;
+        margin: 55px auto;
+    }
+    */
+
+    h3 {
+        font-size: 104%;
+        margin: 55px auto;
+    }
+
+    #text-area {
+        width: 250px;
+        margin: 12px auto;
+        padding: 5px;
+    }
+
+    .text-box {
+        width: 755px;
+        word-wrap: break-word; /* Compatibilidade adicional */
+        white-space: pre-wrap; /* Mantém quebras de linha e força novas */
+        border-radius: 0px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        font-size: 14px;
+    }
+
+    .button1 {
+        width: 100px;
+        border-radius: 0px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .container {
+        margin: 70px auto;
+    }
+
+    #super-h1 {
+        margin: 60px auto;
+        font-size: 35px;
+    }
+
+    /*
+    p {
+        margin: 60px auto;
+    }
+    */
+
+    #hud-h2 {
+        margin: 15px auto;
+    }
+
+    #header-title {
+        font-size: 110%;
+    }
+
+    .opcao {
+        width: 225px;
+        height: 40px;
+    }
+
+    .text-box-dr {
+        width: 60px;
+        font-size: 15.8px;
+    }
+
+    .user-message3-exemplo, .bot-message3-exemplo {
+        width: 160px;
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .user-message3-exemplo {
+        margin-left: auto;
+    }
+
+    #chat-window-2-exemplo {
+        width: 300px;
+        height: 300px;
+    }
+}
