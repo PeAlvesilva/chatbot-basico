@@ -53,7 +53,7 @@ const falseDisplay = document.getElementById("false-display");
               sendbuttonforUN.textContent = 'Nome enviado';
       
               // Adiciona a mensagem do usuário ao chat
-              addmessageforUN(nome, 'user');
+              addmessageforUN(nome, 'username-message');
       
               botResponseforUN(nome)
             }
