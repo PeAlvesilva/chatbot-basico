@@ -1,4 +1,4 @@
-@media (max-width: 950px) {
+@media (max-width: 970px) {
 
     #input-area {
         width: 100%;
@@ -29,11 +29,15 @@
     #img-tab1 {
         width: 35px;
     }
+
+    #installAppBtn {
+        padding: 15px 45px;
+    }
 }
 
 @media (max-width: 1000px) {
     #chat-window {
-        width: 400px;
+        width: 600px;
     }
 
     #user-input {
@@ -134,6 +138,24 @@
     #input-area2 {
         width: 420px;
     }
+
+    #installAppBtn {
+        padding: 15px 45px;
+    }
+
+    #img-tab1 {
+        width: 40px;
+    }
+
+    .tab button {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    #chat-window {
+        width: 400px;
+    }
 }
 
 @media (max-width: 1310px) {
@@ -148,7 +170,6 @@
         z-index: 999;
         position: absolute;
         width: 220px;
-        height: 100%;
         left: 0;
         transform: translateX(0);
         transition: transform 0.3s ease;
@@ -164,5 +185,9 @@
 
     .content.shifted {
         margin-left: 0 !important;
+    }
+
+    #installAppBtn {
+        padding: 15px 45px;
     }
 }

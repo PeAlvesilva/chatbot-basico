@@ -1,14 +1,13 @@
 :root {
-    --user-bg-color: #d1e7dd;
+    --default-bg: #d1e7dd;
     --theme-green: #00ff8c;
     --theme-green-hover: #009c56;
-    --user-text-color: black;
-    --bot-text-color: black;
+    --numerico-color-text: black;
 }
 
 .user-message3, .bot-message3 {
-    background-color: var(--user-bg-color);
-    margin: 20px;
+    background-color: var(--default-bg);
+    margin: 10px;
     width: 550px;
     max-width: 70%;
     padding: 20px;
@@ -23,23 +22,23 @@
 }
 
 .user-message3 {
-    background-color: var(--user-bg-color);
+    background-color: var(--default-bg);
     margin-left: auto;
     text-align: left;
-    color: var(--user-text-color);
+    color: var(--numerico-color-text);
 }
 
 .bot-message3 {
     background-color: var(--theme-green);
-    color: var(--bot-text-color);
+    color: var(--numerico-color-text);
     margin-right: auto;
     text-align: left;
 }
 
 
 .user-message2, .bot-message2 {
-    background-color: var(--user-bg-color);
-    margin: 20px;
+    background-color: var(--default-bg);
+    margin: 10px;
     width: 550px;
     max-width: 70%;
     padding: 20px;
@@ -54,15 +53,15 @@
 }
 
 .user-message2 {
-    background-color: var(--user-bg-color);
+    background-color: var(--default-bg);
     margin-left: auto;
     text-align: left;
-    color: var(--user-text-color);
+    color: var(--numerico-color-text);
 }
 
 .bot-message2 {
     background-color: var(--theme-green);
-    color: var(--bot-text-color);
+    color: var(--numerico-color-text);
     margin-right: auto;
     text-align: left;
 }
@@ -83,6 +82,7 @@
     width: 750px;
     max-width: 180%;
     font-size: large;
+    font-family: "Rubik", sans-serif;
 }
 
 input[type="number"] {
@@ -94,30 +94,35 @@ input[type="number"] {
     border: 1px solid var(--theme-green);
     font-size: large;
     outline: none;
+    font-family: "Rubik", sans-serif;
 }
 
 #send-btn-3 {
-    padding: 10px;
+    padding: 10px 30px;
     background-color: var(--theme-green);
-    color: #000000;
+    color: var(--numerico-color-text);
     border: none;
     border-radius: 15px;
     margin-left: 10px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 700;
     font-size: large;
+    font-family: "Rubik", sans-serif;
+    height: 70px;
 }
 
 #send-btn-2 {
-    padding: 10px;
+    padding: 10px 40px;
     background-color: var(--theme-green);
-    color: #000000;
+    color: var(--numerico-color-text);
     border: none;
     border-radius: 15px;
     margin-left: 10px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 700;
     font-size: large;
+    font-family: "Rubik", sans-serif;
+    height: 70px;
 }
 
 #send-btn-2:hover {

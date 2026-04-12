@@ -20,14 +20,14 @@ function calculate() {
             // Exibe a resposta do bot
             var botMessage = document.createElement("div");
             botMessage.classList.add("bot-message2");
-            botMessage.textContent = `Resultado: ${result}, Resto da divisão: ${remainder}`;
+            botMessage.innerHTML = `Resultado: <strong>${result}</strong>, Resto da divisão: <strong>${remainder}</strong>`;
             
             chatBox.appendChild(botMessage);
         } else if (denominator == 0) {
             // Caso o divisor seja zero
             var botMessage = document.createElement("div");
             botMessage.classList.add("bot-message2");
-            botMessage.textContent = "Erro: Não é possível dividir por zero!";
+            botMessage.innerHTML = "<strong>Erro: Não é possível dividir por zero!</strong>";
             chatBox.appendChild(botMessage);
         } else {
             var botMessage = document.createElement("div");
@@ -57,3 +57,10 @@ denominator.addEventListener("keypress", (e) => {
         sendButton2.click();
     }
 }); 
+
+// Evento de clique para o botão de enviar
+
+sendButton2.addEventListener("click", () => {
+    calculate();
+    touchCalculateBtn();
+});

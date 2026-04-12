@@ -5,12 +5,16 @@
     --bot-text-color: white;
 }
 
+html {
+    zoom: 96%;
+}
+
 body {
     justify-content: center;
     text-align: center;
     display: flex;
     margin: 0;
-    height: 100vh;
+    height: 95dvh;
     flex-direction: column;
     transition: background-color 0.5s ease;
     font-family: "Rubik", sans-serif;
@@ -61,25 +65,46 @@ body {
     border-radius: 10px;
     max-width: 70%;
     margin: 10px;
+    animation: fadeIn 0.5s forwards;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    opacity: 0;
+}
+
+#bot-message4 {
+    background-color: var(--theme-red);
+    color: var(--bot-text-color);
+    margin-right: auto;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 70%;
+    margin: 10px;
+    animation: fadeIn 0.5s forwards;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    opacity: 0;
+}
+
+.user-message4 {
+    background-color: var(--user-bg-color);
+    margin-left: auto;
+    text-align: left;
+    color: var(--user-text-color);
 }
 
 #notification {
-    padding: 8px;
+    padding: 5px;
     margin: 5px 0;
     border-radius: 5px;
     background-color: #ffc4c4;
     position: relative;
     text-align: center;
-    color: black;
-}
-
-.notification .close {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 30px;
-    color: #000000;
+    color: var(--user-text-color);
 }
 
 .tooltip-item {
@@ -119,6 +144,7 @@ body {
     width: 810px;
     max-width: 180%;
     font-size: large;
+    font-family: "Rubik", sans-serif;
 }
 
 #send-btn {
@@ -129,8 +155,8 @@ body {
     border-radius: 15px;
     margin-left: 10px;
     cursor: pointer;
-    font-weight: bold;
     font-size: large;
+    font-family: "Rubik", sans-serif;
 }
 
 #send-btn:hover {
@@ -170,6 +196,7 @@ body {
     display: flex;
     padding: 10px;
     margin: 0 auto;
+    font-family: "Rubik", sans-serif;
 }
 
 #user-input-for-username {
@@ -213,6 +240,7 @@ body {
     animation: fadeIn 0.5s forwards;
     text-align: left;
     margin-left: auto;
+    transition: opacity 0.5s ease;
 }
 
 #send-username-alert {
@@ -222,7 +250,7 @@ body {
     justify-content: center;
     width: 220px;
     margin: 10px auto;
-    color: black;
+    color: var(--user-text-color);
     display: flex;
     border-radius: 10px;
 }
@@ -249,4 +277,18 @@ body {
 
 #img-conversao-de-bases {
     width: 20px;
+}
+
+.message {
+    background-color: var(--user-bg-color);
+    max-width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
 }

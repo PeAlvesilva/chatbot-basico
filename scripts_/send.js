@@ -8,7 +8,8 @@ sendButton.addEventListener("click", () => {
         setTimeout(() => addMessage(response, "bot-message", true), 500); // Mensagem do bot
         userInput.value = ""; // Limpa o campo de entrada
         notification.style.display = 'none';
-    } 
+        touchSendbtn();
+    }
 });
 
 userInput.addEventListener("keypress", (e) => {

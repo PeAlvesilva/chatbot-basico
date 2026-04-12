@@ -1,11 +1,18 @@
+let askedName = false
+
 function botResponse(userMessage) {
     let botMessage = "";
+
+    userMessage = userMessage.toLowerCase();
     
     // Dicionário de respostas pré-definidas
     const responses = {
         "olá": "Olá! Como posso ajudar você hoje?",
         "ola": "Olá! Como posso ajudar você hoje?",
         "oi": "Oi! Como posso ajudar você hoje?",
+        "bom dia": "Bom dia! Espero que seu dia seja produtivo e cheio de aprendizados!",
+        "boa tarde": "Boa tarde! Em que posso ajudar você agora?",
+        "boa noite": "Boa noite! Se precisar de algo, estou por aqui.",
         "ciência": "Ciência é o estudo do mundo natural por meio da observação e experimentação.",
         "ciencia": "Ciência é o estudo do mundo natural por meio da observação e experimentação.",
         "tecnologia": "Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas.",
@@ -45,37 +52,43 @@ function botResponse(userMessage) {
         "imagem": "Aqui está o exemplo de imagem: <br> <img src='conversor/chatbot-conversor-files/bot_icon-chatbot_conversor-high-resolution-logo-transparent.png' alt='Exemplo de imagem' width='200px' />",
         "video": "Assista ao vídeo: <br> <br> <iframe width='560' height='315' src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>",
         "vídeo": "Assista ao vídeo: <br> <br> <iframe width='560' height='315' src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>",
-        "sen/30": "O seno de 30º na tabela trigonométrica é: 1/2",
-        "sen/45": "O seno de 45º na tabela trigonométrica é: raiz quadrada de 2/2",
-        "sen/60": "O seno de 60º na tabela trigonométrica é: raiz quadrada de 3/2",
-        "cos/30": "O cosseno de 30º na tabela trigonométrica é: raiz quadrada de 3/2",
-        "cos/45": "O cosseno de 45º na tabela trigonométrica é: 1/2",
-        "cos/60": "O cosseno de 60º na tabela trigonométrica é: 1/2",
-        "tan/30": "A tangente de 30º na tabela trigonométrica é: raiz quadrada de 3/3",
-        "tan/45": "A tangente de 45º na tabela trigonométrica é: 1",
-        "tan/60": "A tangente de 60º na tabela trigonométrica é: raiz quadrada de 3",
-        "conversor": "<img src='chatbot-conversor/bot_icon-chatbot_conversor-high-resolution-logo-transparent.png' alt='Exemplo de imagem' width='70px'> <br>Chatbot Conversor <br> <a href='chatbot-conversor/chatbot_conversor.html' target='_blank'>Clique para abrir o Chatbot Conversor</a>.",
         "como você está": "Eu sou apenas um chatbot, mas estou aqui para ajudar você!",
         "como você esta": "Eu sou apenas um chatbot, mas estou aqui para ajudar você!",
         "como voce esta": "Eu sou apenas um chatbot, mas estou aqui para ajudar você!",
         "obrigado": "De nada! Estou aqui para ajudar.",
         "ajuda": "Confira mais detalhes sobre o Chatbot: <a href='ajuda/' target='_blank'>Clique Aqui</a>.",
-        "qual é o seu nome?": `Sou seu assistente virtual. E o seu nome, como posso chamá-lo? <br><br><div id="send-username-alert">Digite o seu nome abaixo e clique em [Enviar nome].</div><div id="false-display"></div><div id="input-area-for-username"><input type="text" id="user-input-for-username" placeholder="Digite o seu nome e clique em [Enviar nome]..."><div id="send-button-for-username" onclick="sendUsername()">Enviar nome</div></div>`,
-        "qual é o seu nome?": `Sou seu assistente virtual. E o seu nome, como posso chamá-lo? <br><br><div id="send-username-alert">Digite o seu nome abaixo e clique em [Enviar nome].</div><div id="false-display"></div><div id="input-area-for-username"><input type="text" id="user-input-for-username" placeholder="Digite o seu nome e clique em [Enviar nome]..."><div id="send-button-for-username" onclick="sendUsername()">Enviar nome</div></div>`,
-        "qual e o seu nome": `Sou seu assistente virtual. E o seu nome, como posso chamá-lo? <br><br><div id="send-username-alert">Digite o seu nome abaixo e clique em [Enviar nome].</div><div id="false-display"></div><div id="input-area-for-username"><input type="text" id="user-input-for-username" placeholder="Digite o seu nome e clique em [Enviar nome]..."><div id="send-button-for-username" onclick="sendUsername()">Enviar nome</div></div>`,
         "horário": `Agora são <b>${new Date().toLocaleTimeString('pt-BR')}.</b>`,
         "horario": `Agora são <b>${new Date().toLocaleTimeString('pt-BR')}.</b>`,
         "hora": `Agora são <b>${new Date().toLocaleTimeString('pt-BR')}.</b>`,
         "data": `Hoje é <b>${new Date().toLocaleDateString('pt-BR')}.</b>`,
         "dia": `Hoje é <b>${new Date().toLocaleDateString('pt-BR')}.</b>`,
         "quem criou você?": "Fui criado por desenvolvedores talentosos como você!",
-        "tempo": "Eu não tenho acesso ao tempo agora, mas você pode verificar no seu aplicativo de clima favorito!",
-        "notícia": "Confira as últimas notícias no <a href='https://www.exemplo.com/noticias' target='_blank'>nosso site</a>.",
-        "ajuda com número": "Envie algo como '101 bin' ou '255 dec' para converter números!",
+        // "tempo": "Eu não tenho acesso ao tempo agora, mas você pode verificar no seu aplicativo de clima favorito!",
+        "novidades": "Confira as últimas novidades <a href='novidades/' target='_blank'>aqui</a>.",
         "tchau": "Até logo! Se precisar, é só me chamar.",
         "amor": "O amor é um sentimento incrível, não acha? 💕",
-        "inteligência artificial": "Inteligência Artificial é a capacidade das máquinas de aprender e realizar tarefas de maneira inteligente."
+        "inteligência artificial": "Inteligência Artificial é a capacidade das máquinas de aprender e realizar tarefas de maneira inteligente.",
+        "inteligencia artificial": "Inteligência Artificial é a capacidade das máquinas de aprender e realizar tarefas de maneira inteligente.",
+        "biologia": "Biologia é a ciência que estuda os seres vivos, sua estrutura, funcionamento, evolução e interações com o meio ambiente.",
+        "física": "Física é a ciência que estuda os fenômenos naturais, como movimento, energia, força e matéria, explicando como o universo funciona.",
+        "fisica": "Física é a ciência que estuda os fenômenos naturais, como movimento, energia, força e matéria, explicando como o universo funciona.",
+        "química": "Química é a ciência que estuda a composição, estrutura, propriedades e transformações da matéria.",
+        "quimica": "Química é a ciência que estuda a composição, estrutura, propriedades e transformações da matéria.",
+        "matemática": "Matemática é uma ciência exata que lida com números, formas, padrões e lógica. É fundamental para diversas áreas do conhecimento.",
+        "matematica": "Matemática é uma ciência exata que lida com números, formas, padrões e lógica. É fundamental para diversas áreas do conhecimento."
     };
+
+    if (userMessage === "qual é o seu nome" || userMessage === "qual é o seu nome?" || userMessage === "qual é o seu nome!" || userMessage === "qual é o seu nome." || userMessage === "qual é o seu nome?") {
+        if (askedName) {
+            botMessage = "Você já me perguntou isso 😄 Me diga seu nome!";
+        } else {
+            botMessage = nameResponse();
+        }
+
+        askedName = true;
+
+        return botMessage; // Retorna a mensagem do bot para evitar criar o elemento novamente
+    }
 
     // Verifica se a mensagem é uma operação matemática ou funções trigonométricas/logaritmo
     if (isMathExpression(userMessage)) {
@@ -176,6 +189,9 @@ function isMathExpression(message) {
            /pi/.test(message.toLowerCase()); // Verificação de pi
 }
 
+function nameResponse() {
+    return `É um grande prazer em te conhecer! Qual é o seu nome? <br><br><div id="send-username-alert">Digite o seu nome abaixo e clique em [Enviar nome].</div><div id="false-display"></div><div id="input-area-for-username"><input type="text" id="user-input-for-username" placeholder="Digite o seu nome e envie..." style="font-family: 'Rubik', sans-serif;"><div id="send-button-for-username" onclick="sendUsername()">Enviar nome</div></div>`;
+}
 
 function botResponseforUN(nome) {
     const user = document.getElementById('user');

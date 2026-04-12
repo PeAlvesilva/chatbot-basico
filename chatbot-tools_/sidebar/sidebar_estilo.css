@@ -4,11 +4,14 @@
     height: 100%;
     background-color: #333;
     color: white;
-    padding-top: 100px;
     position: fixed;
     left: 0;
     top: 0;
     transition: width 0.3s ease;
+}
+
+#sidebar-content {
+    padding-top: 100px;
 }
 
 /* Estilo para ocultar o menu lateral */
@@ -32,7 +35,7 @@
     color: white;
     text-decoration: none;
     display: block;
-    padding: 20px;
+    padding: 16px;
 }
 
 #chatbot-conversor-btn:hover {
@@ -46,8 +49,12 @@
     border-radius: 15px;
     color: white;
 }
-/* Botão para ocultar/mostrar o menu */
-#toggleBtn {
+
+#help-btn:hover {
+    background-color: #c42d2d;
+}
+
+#sidebarBtn {
     background-color: #333;
     color: white;
     border: 3px solid #b3b3b3;
@@ -64,11 +71,11 @@
     font-weight: bold;
 }
 
-#toggleBtn.hidden {
+#sidebarBtn.hidden {
     left: 0;
 }
 
-#toggleBtn:hover {
+#sidebarBtn:hover {
     background-color: #c7c7c7;
 }
 
@@ -76,4 +83,22 @@
     background-color: #33fff5;
     color: black;
     border-radius: 15px;
+}
+
+#installAppBtn {
+    padding: 16px 60px;
+    border: none;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    margin: 0 auto;
+    animation: fadeIn 1s forwards, fadeOut 1s 4s forwards;
+    opacity: 0;
+  }
+
+#installAppBtn:hover {
+    background-color: #0a66b1;
 }

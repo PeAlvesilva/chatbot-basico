@@ -62,6 +62,7 @@ sendButton3.addEventListener("click", () => {
         const response = convertNumber(userMessage3);
         setTimeout(() => addMessage1(response, "bot-message3"), 500);
         userInput3.value = "";
+        touchConvertBtn(); // Chama a função para aplicar os efeitos de toque ao botão de conversão
     }
 });
 

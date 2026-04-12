@@ -1,11 +1,4 @@
 @media (max-width: 1000px) {
-    #chat-window-2 {
-        width: 400px;
-    }
-
-    #chat-window-3 {
-        width: 400px;
-    }
 
     #user-input-1 {
         width: 250px;
@@ -32,5 +25,47 @@
         padding: 10px;
         top: 7px;
         left: 7px;
+    }
+
+    #input-area2 {
+        width: 960px;
+    }
+}
+
+@media (max-width: 970px) {
+    #chat-window-2 {
+        width: 600px;
+        height: 350px;
+    }
+
+    #chat-window-3 {
+        width: 600px;
+        height: 350px;
+    }
+
+    #input-area2 {
+        width: 620px;
+    }
+}
+
+@media (max-width: 640px) {
+    #chat-window-2 {
+        width: 400px;
+    }
+
+    #chat-window-3 {
+        width: 400px;
+    }
+
+    #input-area2 {
+        width: 420px;
+    }
+
+    #send-btn-2 {
+        padding: 5px 15px;
+    }
+
+    #send-btn-3 {
+        padding: 5px 15px;
     }
 }

@@ -27,3 +27,33 @@ function copyText006() {
     const textElement = document.getElementById('text-to-copy-006');
     copyToClipboard(textElement.textContent, 'Texto copiado para a área de transferência!');
 }
+
+function copyText007() {
+    const textElement = document.getElementById('text-to-copy-007');
+    copyToClipboard(textElement.textContent, 'Texto copiado para a área de transferência!');
+}
+
+function copyText008() {
+    const textElement = document.getElementById('text-to-copy-008');
+    copyToClipboard(textElement.textContent, 'Texto copiado para a área de transferência!');
+}
+
+function copyText009() {
+    const textElement = document.getElementById('text-to-copy-009');
+    copyToClipboard(textElement.textContent, 'Texto copiado para a área de transferência!');
+}
+
+function copyText010() {
+    const textElement = document.getElementById('text-to-copy-010');
+    copyToClipboard(textElement.textContent, 'Texto copiado para a área de transferência!');
+}
+
+function copyText011() {
+    const textElement = document.getElementById('text-to-copy-011');
+    copyToClipboard(textElement.textContent, 'Texto copiado para a área de transferência!');
+}
+
+function copyText012() {
+    const textElement = document.getElementById('text-to-copy-012');
+    copyToClipboard(textElement.textContent, 'Texto copiado para a área de transferência!');
+}
