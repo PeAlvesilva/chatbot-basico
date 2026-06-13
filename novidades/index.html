@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chatbot v0.3 — Notas Técnicas (visual Markdown)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#ffffff;--paper:#3e4043;--text:#e6eef6;--muted:#9fb0c8;--accent:#7dd3fc;--code:#0b0f14;}
+    body{background:linear-gradient(180deg,#ffb8b8 0%,var(--bg) 100%);color:var(--text);font-family:'Rubik', sans-serif;line-height:1.6;padding:36px;}
+    .container{max-width:900px;margin:0 auto;background:var(--paper);border-radius:12px;padding:28px;box-shadow:0 8px 30px rgba(2,6,23,0.7);} 
+    h1{font-size:1.6rem;margin:0 0 8px}
+    h2{font-size:1.2rem;margin-top:22px}
+    h3{font-size:1rem;margin-top:18px}
+    p{margin:8px 0}
+    .meta{color:var(--muted);font-size:0.95rem}
+    hr{border:0;height:1px;background:linear-gradient(90deg,transparent,var(--muted),transparent);margin:18px 0}
+    pre, code{background:linear-gradient(180deg,#06121a,#071827);padding:8px;border-radius:6px;color:var(--accent); font-size:0.95rem}
+    pre{padding:14px;overflow:auto}
+    blockquote{border-left:3px solid rgba(125,211,252,0.12);padding-left:12px;color:var(--muted);margin:12px 0}
+    ul{margin:8px 0 8px 20px}
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{padding:10px;border-top:1px solid rgba(255,255,255,0.03);text-align:left}
+    th{color:var(--muted);font-weight:600}
+    
+    .code-block {
+      background:var(--code);
+      padding:12px;
+      border-radius:8px;
+      color:#cfeefc;
+      border:1px solid rgba(255,255,255,0.02)
+    }
+
+    .footer{margin-top:20px;color:var(--muted);font-size:0.9rem}
+    
+    
+    #secao-chatbot {
+    flex-direction: row;
+    display: flex;
+    margin: 30px auto;
+  }
+
+  #secao-chatbot h2 {
+    font-size: 1.2rem;
+    margin-top: 14px;
+  }
+
+  #secao-chatbot img {
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+  }
+  </style>
+</head>
+<body>
+<div class="container">
+<strong>🤖 Chatbot v0.3 – Notas Técnicas de Lançamento</strong>
+<div class="meta">Versão: 0.3 • Atualização evolutiva</div>
+<div class="meta">Data de lançamento: 12/04/2026</div>
+<hr />
+
+<h2>🔹 Visão geral da atualização</h2>
+<p>A versão <strong>0.3</strong> amplia significativamente o conjunto de respostas do Chatbot, introduz melhorias de usabilidade, responsividade, suporte a PWA e refinamentos visuais e funcionais nos dois modos (Básico e Numérico).</p>
+
+<div id="secao-chatbot">
+    <img src="files_/bot_icon-chatbot_basico-high-resolution-logo-transparent.png" alt="chatbot-basico " id="secao-chatbot-basico img"/>
+    <h2>Chatbot Básico</h2>
+</div>
+<h3>🧠 Novas respostas adicionadas</h3>
+<ul>
+<li><strong>Primeiro Contato:</strong> bom dia, boa tarde, boa noite, novidades</li>
+<li><strong>Respostas pré-definidas:</strong> amor, inteligência artificial, biologia, física, química, matemática</li>
+</ul>
+
+<div class="code-block">
+<pre><strong>Exemplo:</strong>
+Entrada: bom dia
+Saída: Bom dia! Espero que seu dia seja produtivo e cheio de aprendizados!
+
+Entrada: novidades
+<p>Saída: Confira as últimas novidades</p><p style="color: aliceblue;">aqui.</p>
+
+</pre>
+</div>
+
+<p>As respostas também funcionam sem acentuação e estão disponíveis no site de ajuda:</p>
+<p><a href="https://pealvesilva.github.io/chatbot-basico/ajuda/" target="_blank"></a></p>
+
+<h3>🧑‍💻 Interação com nome do usuário</h3>
+<ul>
+<li>Botão de envio do nome desaparece após uso</li>
+<li>Para alterar o nome, é necessário reiniciar o site</li>
+<li>Limite de repetição para pergunta sobre nome do chatbot</li>
+</ul>
+
+<div class="code-block">
+<pre>Resposta: Você já me perguntou isso 😄 Me diga seu nome!</pre>
+</div>
+
+<div id="secao-chatbot">
+  <img src="files_/bot_icon-chatbot_conversor-high-resolution-logo-transparent.png" alt="chatbot-numérico " id="secao-chatbot-numérico img"/>
+  <h2>Chatbot Numérico</h2>
+</div>
+<ul>
+<li>Botões de Calcular e Converter expandidos</li>
+<li>Resultados e erros exibidos em <strong>negrito</strong> no modo divisão com resto</li>
+</ul>
+
+<h2>📱 PWA (Progressive Web App)</h2>
+<ul>
+<li>Adicionado suporte a instalação como aplicativo</li>
+<li>Botão "Instalar App" disponível no menu lateral</li>
+</ul>
+
+<h2>🎨 Interface e estilo</h2>
+<ul>
+<li>Fonte Rubik aplicada em inputs, botões e abas</li>
+<li>Botões de tema com bordas arredondadas (130px)</li>
+<li>Hover aplicado nos botões Ajuda e Novidades</li>
+<li>Zoom definido para 96%</li>
+<li>Altura ajustada para 95dvh</li>
+<li>Suporte a touchscreen implementado</li>
+</ul>
+
+<h2>📐 Responsividade</h2>
+<table>
+<thead>
+<tr><th>Componente</th><th>Largura de tela</th><th>Configuração</th></tr>
+</thead>
+<tbody>
+<tr><td>Chatbot Básico</td><td>até 640px</td><td>largura do chat: 400px</td></tr>
+<tr><td>Chatbot Básico</td><td>640px - 1000px</td><td>largura do chat: 600px</td></tr>
+<tr><td>Chatbot Numérico</td><td>até 640px</td><td>largura do chat: 400px / área de input: 420px</td></tr>
+<tr><td>Chatbot Numérico</td><td>640px - 970px</td><td>largura do chat: 600px + <br>altura do chat: 350px / área de input: 620px</td></tr>
+<tr><td>Chatbot Numérico</td><td>até 1000px</td><td>área de input: 960px</td></tr>
+</tbody>
+</table>
+
+<h2>📦 Resumo técnico da versão 0.3</h2>
+<table>
+<tr><th>Categoria</th><th>Descrição</th></tr>
+<tr><td>Versão</td><td>0.3</td></tr>
+<tr><td>Novas respostas</td><td>+10 adicionadas</td></tr>
+<tr><td>PWA</td><td>Suporte implementado</td></tr>
+<tr><td>Responsividade</td><td>Aprimorada</td></tr>
+<tr><td>Interface</td><td>Melhorias visuais e UX</td></tr>
+</table>
+
+<div class="footer">Gerado automaticamente — Chatbot v0.3 • Notas Técnicas</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+:root {
+    --borda: #000;
+    --cinza-claro: #f3f3f3;
+    --cinza-botao: #d9dde1;
+    --cinza-hover: #cfd4d9;
+    --tempo: 0.4s;
+}
+
+/* Container */
+.menu {
+    max-width: 700px;
+    width: 100%;
+    border: 2px solid var(--borda);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow var(--tempo);
+    margin: 7px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.menu:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Cabeçalho */
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: var(--cinza-claro);
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Botão */
+.toggle-btn {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--borda);
+    border-radius: 8px;
+    background: var(--cinza-botao);
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 
+        transform var(--tempo),
+        background var(--tempo);
+}
+
+.menu-header:hover .toggle-btn {
+    background: var(--cinza-hover);
+}
+
+/* Conteúdo */
+.menu-content {
+    background-color: rgba(0, 0, 0, 0.733);
+    max-height: 0;
+    overflow: hidden;
+    color: white;
+    padding: 0 20px;
+    overflow-y: scroll;
+    line-height: 1.5;
+    opacity: 0;
+    transition: 
+        max-height var(--tempo) ease,
+        opacity var(--tempo) ease,
+        padding var(--tempo);
+}
+
+/* Estado ativo */
+.menu.active .menu-content {
+    max-height: 800px;
+    padding: 20px;
+    opacity: 1;
+}
+
+.menu.active .toggle-btn {
+    transform: rotate(180deg);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .menu-content {
+        font-size: 18px;
+    }
+
+    .toggle-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
